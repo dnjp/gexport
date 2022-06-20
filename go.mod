@@ -1,4 +1,4 @@
-module github.com/dnjp/gauthexport
+module github.com/dnjp/gexport
 
 go 1.18
 

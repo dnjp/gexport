@@ -11,14 +11,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dnjp/gauthexport/proto/gauth"
+	"github.com/dnjp/gexport/proto/gauth"
 	"github.com/makiuchi-d/gozxing"
 	"github.com/makiuchi-d/gozxing/qrcode"
 	"google.golang.org/protobuf/proto"
 )
 
 func usage(name string) {
-	fmt.Fprintf(os.Stdout, "%s [QR FILE] [OUT DIR]\n", name)
+	fmt.Fprintf(os.Stdout, "%s [QR FILE] [OUTPUT DIRECTORY]\n", name)
 }
 
 func decodeQR(path string) (*gozxing.Result, error) {

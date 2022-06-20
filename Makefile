@@ -1,3 +1,6 @@
+
+all: build
+
 .PHONY: proto
 proto:
 	cd proto && \
@@ -6,9 +9,8 @@ proto:
 		--go-grpc_out=gauth --go-grpc_opt=paths=source_relative \
 		gauth.proto
 
-install: proto
-	go install main.go
-
+.PHONY: build
 build: proto
 	mkdir -p bin
 	go build -o bin/gexport ./main.go
+
