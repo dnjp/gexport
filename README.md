@@ -5,10 +5,16 @@ This is a tool that extracts individual QR codes from a Google Authenticator bac
 ## Usage
 
 ```
-gexport [QR FILE] [OUT DIR]
+gexport [QR FILE] [OUTPUT DIRECTORY]
 ```
 
 ## Installation
+
+### Go Install
+
+```
+$ go install github.com/dnjp/gexport@latest
+```
 
 ### Build from Source
 
