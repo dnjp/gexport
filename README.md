@@ -1,4 +1,4 @@
-# Google Auth Export
+# Google Authenticator Export
 
 This is a tool that extracts individual QR codes from a Google Authenticator backup file which can be used to import accounts into a tool like [Raivo OTP](https://github.com/raivo-otp/ios-application).
 
